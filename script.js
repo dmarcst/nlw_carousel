@@ -12,7 +12,7 @@ document.addEventListener('wheel', (e) => {
     }
     
     // Calculate the number of scroll steps
-    const scrollSteps = Math.floor(e.deltaY / 100); // Adjust the divisor for scroll sensitivity
+    const scrollSteps = e.deltaY / 100; // Adjust the divisor for scroll sensitivity
     
     // Update the total rotation based on the scroll steps and rotation increment
     totalRotation += rotationIncrement * scrollSteps;
